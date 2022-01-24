@@ -1,0 +1,8 @@
+# VSCode
+.vscode/
+
+# JetBrains
+.idea/
+
+# CSS Generated Files
+css/
