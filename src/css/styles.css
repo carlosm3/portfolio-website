@@ -1,0 +1,500 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.theme-light {
+  --background: #ffffff;
+  --border: #d6d9dc;
+  --border: #DFDFDF;
+  --font: #232629;
+  --button: #3b4045;
+  --tag: #e1ecf4;
+  --primary: #24292f;
+  --secondary: #d0d7de;
+  --tertiary: #0969da;
+}
+
+h1 {
+  color: var(--font);
+}
+
+a {
+  text-decoration: none;
+  color: #39739d;
+}
+
+.hl-blue, .hl-yellow {
+  display: inline-block;
+  padding: 0.125rem 0.5rem 0;
+  border-radius: 2px;
+}
+
+.container {
+  max-width: 832px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+p {
+  color: var(--primary);
+}
+
+.hl-blue {
+  background-color: #c1e4ff;
+}
+
+.hl-yellow {
+  background-color: #fffcdb;
+}
+
+header {
+  margin-top: 1rem;
+}
+
+#theme-toggle {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+#theme-toggle:hover {
+  cursor: pointer;
+}
+
+#light {
+  display: none;
+}
+
+#info {
+  margin: 2rem 0 2rem 0;
+}
+
+#info a {
+  color: #0066b7;
+}
+
+#info p {
+  margin: 0.75rem 0 1rem 0;
+  line-height: 1.6;
+}
+
+#info h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#info ul#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+#info ul#contact li a {
+  line-height: 1.75;
+  margin-right: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#info ul#contact li a span {
+  margin-left: 0.5rem;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Lato", sans-serif;
+}
+
+svg {
+  color: var(--primary);
+  color: #838c95;
+}
+
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.project {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.project .overview p {
+  line-height: 1.5;
+}
+
+.project .overview h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--tertiary);
+  color: var(--font);
+}
+
+.project .tags {
+  padding-top: 1rem;
+}
+
+.project .tags div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project .tags .tag {
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.25rem 0.7rem;
+  margin: 0.5rem 0.5rem 0 0;
+  background-color: var(--tag);
+  color: #39739d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /*#region HOVER STATES*/
+  /*#endregion */
+}
+
+.project .tags .tag.html5:hover {
+  background-color: #c73f1a;
+  color: #fff;
+}
+
+.project .tags .tag.sass:hover {
+  background-color: #c14482;
+  color: #fff;
+}
+
+.project .tags .tag.javascript:hover {
+  background-color: #e3ca08;
+  color: #575757;
+}
+
+.project .tags .tag.nodejs:hover {
+  background-color: #2b822b;
+  color: #fff;
+}
+
+.project .tags .tag.aws:hover {
+  background-color: #1e2835;
+  color: #fff;
+}
+
+.project .tags .tag.netlify:hover {
+  background-color: #00a99c;
+  color: #fff;
+}
+
+.project .tags .tag.bootstrap:hover {
+  background-color: #66449a;
+  color: #fff;
+}
+
+.project .tags .tag.aspnet:hover {
+  background-color: #4525b4;
+  color: #fff;
+}
+
+.project .tags .tag.csharp:hover {
+  background-color: #1e7b1b;
+  color: #fff;
+}
+
+.project .tags .tag.azure:hover {
+  background-color: #0066b7;
+  color: #fff;
+}
+
+.project .tags .tag.sqlserver:hover {
+  background-color: #cc2927;
+  color: #fff;
+}
+
+.project .tags .tag.ubuntu:hover {
+  background-color: #cd4414;
+  color: #fff;
+}
+
+.project .tags .tag.css3:hover {
+  background-color: #12619b;
+  color: #fff;
+}
+
+.project .tags .tag.python:hover {
+  background-color: #2f6491;
+  color: #fff;
+}
+
+.project .tags .tag.debian:hover {
+  background-color: #8f192b;
+  color: #fff;
+}
+
+.project .tags .tag:last-child {
+  margin-right: 0;
+}
+
+.project .tags .tag:hover {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.proj-tag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--tag);
+  color: #39739d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0.3rem 1rem;
+  border-radius: 0 4px;
+}
+
+.view-git-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F7F7F7;
+  margin-top: 0.75rem;
+  border-top: 1px solid #DFDFDF;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+.view-git-btn > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 300px;
+  width: 100%;
+  width: calc(280px + 1rem);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.view-git-btn a {
+  padding: 0.25rem 0.8rem;
+  width: 60%;
+  display: inline-block;
+  text-align: center;
+  background-color: #3b5b7c;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.view-git-btn a:last-of-type {
+  margin-left: 0.5rem;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 0.75px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container > footer {
+  padding-top: 18px;
+  text-align: center;
+}
+
+.content {
+  display: none;
+}
+
+footer {
+  margin-bottom: 2rem;
+  display: none;
+}
+
+#author {
+  color: #7a7a7a;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#author a {
+  text-decoration: none;
+  color: #4ba4ec;
+  padding-bottom: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/*#region ACTIVE STATES*/
+.html5-a {
+  background-color: #c73f1a !important;
+  color: #fff !important;
+}
+
+.sass-a {
+  background-color: #c14482 !important;
+  color: #fff !important;
+}
+
+.javascript-a {
+  background-color: #f7df1e !important;
+  color: #323330 !important;
+}
+
+.nodejs-a {
+  background-color: #2b822b !important;
+  color: #fff !important;
+}
+
+.aws-a {
+  background-color: #1e2835 !important;
+  color: #fff !important;
+}
+
+.netlify-a {
+  background-color: #00a99c !important;
+  color: #fff !important;
+}
+
+.bootstrap-a {
+  background-color: #66449a !important;
+  color: #fff !important;
+}
+
+.aspnet-a {
+  background-color: #4525b4 !important;
+  color: #fff !important;
+}
+
+.csharp-a {
+  background-color: #1e7b1b !important;
+  color: #fff !important;
+}
+
+.azure-a {
+  background-color: #0066b7 !important;
+  color: #fff !important;
+}
+
+.sqlserver-a {
+  background-color: #cc2927 !important;
+  color: #fff !important;
+}
+
+.ubuntu-a {
+  background-color: #cd4414 !important;
+  color: #fff !important;
+}
+
+.css3-a {
+  background-color: #12619b !important;
+  color: #fff !important;
+}
+
+.python-a {
+  background-color: #2f6491 !important;
+  color: #fff !important;
+}
+
+.debian-a {
+  background-color: #8f192b !important;
+  color: #fff !important;
+}
+
+/*#endregion */
+/*# sourceMappingURL=styles.css.map */
